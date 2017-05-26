@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -62,10 +61,8 @@ public class MainActivity extends Activity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                team_A_Score = team_A_Score + 0;
+                team_A_Score = team_A_Score + 1;
                 textView.setText(""+team_A_Score);
-
-                Toast.makeText(getApplicationContext(),"You Missed It", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -92,10 +89,8 @@ public class MainActivity extends Activity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                team_B_Score = team_B_Score + 0;
+                team_B_Score = team_B_Score + 1;
                 textView2.setText(""+team_B_Score);
-
-                Toast.makeText(getApplicationContext(),"You Missed It", Toast.LENGTH_SHORT).show();
             }
         });
     }
